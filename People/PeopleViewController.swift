@@ -10,7 +10,7 @@ import UIKit
 
 class PeopleViewController: UITableViewController {
 
-    var people = ["Luke Skywalker", "Leia Organa", "Han Solo", "C-3PO", "R2-D2"]
+    var people = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,9 +30,24 @@ class PeopleViewController: UITableViewController {
                     //print(jsonResult)
                     if let results = jsonResult["results"] {
                         let resultsArray = results as! NSArray
-                        print(resultsArray.count)
-                        print(resultsArray[0])
-                        print(resultsArray.firstObject)
+                        //print(resultsArray.count)
+                        //print(resultsArray[0])
+                        for i in 0..<resultsArray.count {
+                                let resultsArray2 = resultsArray[i] as! NSDictionary
+                                //print(resultsArray.firstObject)
+                                //print(resultsArray2["name"])
+                                let name = resultsArray2["name"]
+                                if name != nil {
+                                    self.people.append(name as! String)
+                                    print(name as! String)
+                                }
+                                //let indexPath = IndexPath(row: i, section: 0)
+                                //self.tableView.cellForRow(at: indexPath)
+                        }
+                        DispatchQueue.main.async {
+                            self.tableView.reloadData()
+                        }
+                        
                     }
                 }
             } catch {
@@ -42,6 +57,7 @@ class PeopleViewController: UITableViewController {
         // execute the task and wait for the response before
         // running the completion handler. This is async!
         task.resume()
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
