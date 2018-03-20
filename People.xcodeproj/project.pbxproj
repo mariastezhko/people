@@ -14,6 +14,7 @@
 		5A2D2C92206064D3001A162E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2D2C90206064D3001A162E /* LaunchScreen.storyboard */; };
 		5A2D2C9D206064D3001A162E /* PeopleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2D2C9C206064D3001A162E /* PeopleTests.swift */; };
 		5A2D2CA8206064D4001A162E /* PeopleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2D2CA7206064D4001A162E /* PeopleUITests.swift */; };
+		5A2D2CB82060991C001A162E /* FilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2D2CB72060991C001A162E /* FilmsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5A2D2CA3206064D4001A162E /* PeopleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeopleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A2D2CA7206064D4001A162E /* PeopleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleUITests.swift; sourceTree = "<group>"; };
 		5A2D2CA9206064D4001A162E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A2D2CB72060991C001A162E /* FilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				5A2D2C87206064D3001A162E /* AppDelegate.swift */,
 				5A2D2C89206064D3001A162E /* PeopleViewController.swift */,
 				5A2D2C8B206064D3001A162E /* Main.storyboard */,
+				5A2D2CB72060991C001A162E /* FilmsViewController.swift */,
 				5A2D2C8E206064D3001A162E /* Assets.xcassets */,
 				5A2D2C90206064D3001A162E /* LaunchScreen.storyboard */,
 				5A2D2C93206064D3001A162E /* Info.plist */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A2D2CB82060991C001A162E /* FilmsViewController.swift in Sources */,
 				5A2D2C8A206064D3001A162E /* PeopleViewController.swift in Sources */,
 				5A2D2C88206064D3001A162E /* AppDelegate.swift in Sources */,
 			);
